@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <title>Галерея</title>
+  <base href="https://htmlacademy-adaptive.github.io/1632515-sedona-27/2/">
+</head>
+<body class="page__body">
+
+  <header class="main-header">
+    <a href="index.html" class="main-header__logo">
+      <img class="main-header__logo-header" src="img/svg/logo/logo.svg" width="185" height="96" alt="логотип города Седона">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">
+          открыть меню.
+        </span>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list list">
+          <li class="list__item item">
+            <a href="index.html" class="item__link">
+              главная
+            </a>
+          </li>
+          <li class="list__item item list__item--current">
+            <a href="#" class="item__link">
+              фото и видео
+            </a>
+          </li>
+        </ul>
+        <ul class="main-nav__list list">
+          <li class="list__item item">
+            <a href="form.html" class="item__link">
+              форма отзыва
+            </a>
+          </li>
+          <li class="list__item item">
+            <a href="https://htmlacademy.ru" class="item__link">
+              html academy
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+  </header>
+
+  <main class="catalog-container">
+    <div class="catalog-container__wrapper">
+      <section class="hero-catalog">
+        <div class="hero-catalog__wrapper">
+          <h1 class="visually-hidden">
+            Седона.
+          </h1>
+          <img class="hero-catalog__img" src="img/svg/main/title-sedona.svg" alt="Седона" >
+        </div>
+      </section>
+      <section class="intro-catalog">
+        <div class="intro-catalog__wrapper">
+          <h2 class="intro-catalog__title">
+            фото и видео
+          </h2>
+          <p class="intro-catalog__description">
+            Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
+          </p>
+        </div>
+      </section>
+      <section class="card">
+        <div class="card__wrapper">
+          <ul class="card__list">
+            <li class="card__item">
+              <img class="card__img" src="img/jpeg/card/photo-card-1.jpeg" alt="дорога на закате">
+              <h3 class="card__title">
+                народные просторы
+              </h3>
+              <p class="card__autor autor">
+                Автор фото:
+                <span class="autor__name">
+                  Борис
+                </span>
+              </p>
+              <div class="card__like like">
+                <button class="like__button">
+                  <img src="img/svg/icon/like.svg" alt="нравится">
+                </button>
+                <span class="like__amount">1350</span>
+              </div>
+            </li>
+
+            <li class="card__item">
+              <img class="card__img" src="img/jpeg/card/photo-card-2.jpeg" alt="цветущий кактус">
+              <h3 class="card__title">
+                местная растительность
+              </h3>
+              <p class="card__autor autor">
+                Автор фото:
+                <span class="autor__name">
+                  Сергей
+                </span>
+              </p>
+              <div class="card__like like">
+                <button class="like__button">
+                  <img src="img/svg/icon/like.svg" alt="нравится">
+                </button>
+                <span class="like__amount">143</span>
+              </div>
+            </li>
+
+            <li class="card__item">
+              <img class="card__img" src="img/jpeg/card/photo-card-3.jpeg" alt="извилистая дорога">
+              <h3 class="card__title">
+                дорога на север
+              </h3>
+              <p class="card__autor autor">
+                Автор фото:
+                <span class="autor__name">
+                  петр
+                </span>
+              </p>
+              <div class="card__like like">
+                <button class="like__button">
+                  <img src="img/svg/icon/like.svg" alt="нравится">
+                </button>
+                <span class="like__amount">96</span>
+              </div>
+            </li>
+
+            <li class="card__item">
+              <img class="card__img" src="img/jpeg/card/photo-card-4.jpeg" alt="камень мост">
+              <h3 class="card__title">
+                мост дьявола
+              </h3>
+              <p class="card__autor autor">
+                Автор фото:
+                <span class="autor__name">
+                  Антон
+                </span>
+              </p>
+              <div class="card__like like">
+                <button class="like__button">
+                  <img src="img/svg/icon/like.svg" alt="нравится">
+                </button>
+                <span class="like__amount">254</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="video-catalog">
+        <div class="video-catalog__wrapper">
+          <h2 class="video-catalog__title">
+            все еще сомневаетесь?
+          </h2>
+          <p class="video-catalog__description">
+            смотрите видеопрезентацию и скорее за билетами,
+            пока они не подорожали в очередной раз!
+          </p>
+          <video class="video-catalog__player"
+            preload="metadata"
+            poster="img/jpeg/poster-video/video-mobile.jpg"
+            controls>
+              <source src="#" type="video/webm">
+              <source src="#" type="video/mp4">
+          </video>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="main-footer">
+    <div class="main-footer__wrapper">
+      <div class="main-footer__tag tag">
+        <p class="tag__title">
+          #visitSEDONA
+        </p>
+      </div>
+      <div class="main-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a href="https://vk.com/htmlacademy" class="social__link social__link--vkontakte">
+              <span class="visually-hidden">мы вконтакте.</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="https://t.me/htmlacademy" class="social__link social__link--telegram">
+              <span class="visually-hidden">мы в телеграм.</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="https://www.youtube.com/user/htmlacademyru" class="social__link social__link--youtube">
+              <span class="visually-hidden">мы в youtube.</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-footer__copyright copyright">
+        <a href="https://htmlacademy.ru" class="copyright__link">
+          <span class="copyright__text">разработано</span>
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            width="27"
+            height="35"
+            viewBox="0 0 27 35"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+             d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -12,7 +12,7 @@
 
     <header class="main-header">
       <a href="#" class="main-header__logo">
-        <img class="main-header__logo-header" src="img/svg/logo/logo.svg" width="185" height="96" alt="логотип города Седона">
+        <img class="main-header__logo-image" src="img/svg/logo/logo.svg" width="185" height="96" alt="логотип города Седона">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
@@ -22,25 +22,23 @@
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list list">
-            <li class="list__item item list__item--current">
-              <a href="#" class="item__link">
+            <li class="list__item list__item--current">
+              <a class="list__item-link" href="#" >
                 главная
               </a>
             </li>
-            <li class="list__item item">
-              <a href="catalog.html" class="item__link">
+            <li class="list__item">
+              <a class="list__item-link" href="catalog.html" >
                 фото и видео
               </a>
             </li>
-          </ul>
-          <ul class="main-nav__list list">
-            <li class="list__item item">
-              <a href="form.html" class="item__link">
+            <li class="list__item">
+              <a class="list__item-link" href="form.html" >
                 форма отзыва
               </a>
             </li>
-            <li class="list__item item">
-              <a href="https://htmlacademy.ru" class="item__link">
+            <li class="list__item">
+              <a class="list__item-link" href="https://htmlacademy.ru" >
                 html academy
               </a>
             </li>
@@ -57,7 +55,7 @@
             <h1 class="visually-hidden">
               Добро пожаловать в Седону.
             </h1>
-            <img class="hero__img" src="img/svg/main-hero-title.svg" alt="welcome to the gorgeous sedona because the grand canyon sucks." >
+            <img class="hero__img" src="img/svg/main/title-welcome.svg" alt="welcome to the gorgeous sedona because the grand canyon sucks." >
           </div>
         </section>
         <section class="intro">
@@ -74,8 +72,8 @@
           <div class="advantages__wrapper">
             <h2 class="visually-hidden">преимущества Седоны.</h2>
             <ul class="advantages__list">
-              <li class="advantages__item item advantages__item--color-first">
-                <div class="item__wrapper">
+              <li class="advantages__item advantages__item--color-first">
+                <div class="advantages__item-wrapper">
                   <h2 class="advantages__title">
                     настоящий городок
                   </h2>
@@ -89,11 +87,11 @@
               </li>
 
               <li class="advantages__item advantages__item--img">
-                <img src="img/jpeg/advantage/town.jpg" alt="" class="advantages__img">
+                <img src="img/jpeg/advantage/town.jpg" alt="городок Седона" class="advantages__img">
               </li>
 
-              <li class="advantages__item item advantages__item--home">
-                <div class="item__wrapper">
+              <li class="advantages__item advantages__item--home">
+                <div class="advantages__item-wrapper">
                   <h2 class="advantages__title">
                     жилье
                   </h2>
@@ -103,8 +101,8 @@
                 </div>
               </li>
 
-              <li class="advantages__item item advantages__item--food">
-                <div class="item__wrapper">
+              <li class="advantages__item advantages__item--food">
+                <div class="advantages__item-wrapper">
                   <h2 class="advantages__title">
                     еда
                   </h2>
@@ -114,8 +112,8 @@
                 </div>
               </li>
 
-              <li class="advantages__item item advantages__item--gift">
-                <div class="item__wrapper">
+              <li class="advantages__item advantages__item--gift">
+                <div class="advantages__item-wrapper">
                   <h2 class="advantages__title">
                     сувениры
                   </h2>
@@ -125,8 +123,8 @@
                 </div>
               </li>
 
-              <li class="advantages__item item advantages__item--color-first">
-                <div class="item__wrapper">
+              <li class="advantages__item advantages__item--color-first">
+                <div class="advantages__item-wrapper">
                   <h2 class="advantages__title">
                     там есть мост дьявола
                   </h2>
@@ -139,12 +137,12 @@
                 </div>
               </li>
 
-              <li class="advantages__item item advantages__item--img">
-                <img src="img/jpeg/advantage/bridge.jpg" alt="" class="advantages__img">
+              <li class="advantages__item advantages__item--img">
+                <img src="img/jpeg/advantage/bridge.jpg" alt="мост дьявола" class="advantages__img">
               </li>
 
-              <li class="advantages__item item advantages__item--color-second">
-                <div class="item__wrapper">
+              <li class="advantages__item advantages__item--color-second">
+                <div class="advantages__item-wrapper">
                   <h2 class="advantages__title">
                     небольшая площадь
                   </h2>
@@ -157,8 +155,8 @@
                 </div>
               </li>
 
-              <li class="advantages__item item advantages__item--color-second">
-                <div class="item__wrapper">
+              <li class="advantages__item advantages__item--color-second">
+                <div class="advantages__item-wrapper">
                   <h2 class="advantages__title">
                     красивая дорога
                   </h2>
@@ -171,8 +169,8 @@
                 </div>
               </li>
 
-              <li class="advantages__item item advantages__item--color-second">
-                <div class="item__wrapper">
+              <li class="advantages__item advantages__item--color-second">
+                <div class="advantages__item-wrapper">
                   <h2 class="advantages__title">
                     мало туристов
                   </h2>
@@ -186,7 +184,6 @@
               </li>
 
             </ul>
-
           </div>
         </section>
         <section class="search">
@@ -205,7 +202,15 @@
         </section>
         <section class="maps">
           <h2 class="visually-hidden">расположение на карте.</h2>
-          <iframe src="" frameborder="0"></iframe>
+          <iframe class="maps__content"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d295903.0559638879!2d-111.62354485524823!3d34.974205362625774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da300cd6a52d3%3A0xd0b62ffa7e756ca6!2sSedona!5e0!3m2!1sru!2sru!4v1669822568757!5m2!1sru!2sru"
+            width="400"
+            height="300"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
         </section>
       </div>
     </main>

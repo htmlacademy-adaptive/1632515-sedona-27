@@ -12,7 +12,7 @@
 
   <header class="main-header">
     <a href="index.html" class="main-header__logo">
-      <img class="main-header__logo-header" src="img/svg/logo/logo.svg" width="185" height="96" alt="логотип города Седона">
+      <img class="main-header__logo-image" src="img/svg/logo/logo.svg" width="185" height="96" alt="логотип города Седона">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
@@ -22,25 +22,23 @@
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list list">
-          <li class="list__item item">
-            <a href="index.html" class="item__link">
+          <li class="list__item">
+            <a class="list__item-link" href="index.html" >
               главная
             </a>
           </li>
-          <li class="list__item item list__item--current">
-            <a href="catalog.html" class="item__link">
+          <li class="list__item">
+            <a class="list__item-link" href="catalog.html" >
               фото и видео
             </a>
           </li>
-        </ul>
-        <ul class="main-nav__list list">
-          <li class="list__item item">
-            <a href="#" class="item__link">
+          <li class="list__item list__item--current">
+            <a class="list__item-link" href="form.html" >
               форма отзыва
             </a>
           </li>
-          <li class="list__item item">
-            <a href="https://htmlacademy.ru" class="item__link">
+          <li class="list__item">
+            <a class="list__item-link" href="https://htmlacademy.ru" >
               html academy
             </a>
           </li>
@@ -79,35 +77,35 @@
 
             <div class="form__full-name full-name">
               <div class="full-name__wrapper">
-                <h2 class="full-name__title">
+                <h2 class="form__title">
                   Представьтесь:
                 </h2>
                 <div class="full-name__input-wrapper">
-                  <label class="full-name__text-field text-field">
-                    <p class="text-field__title">
+                  <label class="full-name__field field">
+                    <p class="field__title">
                       Имя*:
                     </p>
-                    <input class="text-field__field"
+                    <input class="form__input"
                       type="text"
                       placeholder="Укажите имя"
                       value="Петр"
                       required>
                   </label>
-                  <label class="full-name__text-field text-field">
-                    <p class="text-field__title">
+                  <label class="full-name__field field">
+                    <p class="field__title">
                       Фамилия*:
                     </p>
-                    <input class="text-field__field"
+                    <input class="form__input"
                       type="text"
                       placeholder="Укажите фамилию"
                       value="Пустота"
                       required>
                   </label>
-                  <label class="full-name__text-field text-field">
-                    <p class="text-field__title">
+                  <label class="full-name__field field">
+                    <p class="field__title">
                       Отчество:
                     </p>
-                    <input class="text-field__field"
+                    <input class="form__input"
                       type="text"
                       placeholder="Укажите отчество при наличии"
                       value="Викторович">
@@ -116,24 +114,24 @@
               </div>
 
               <div class="full-name__contact-details contact-details">
-                <h2 class="contact-details__title">
+                <h2 class="form__title">
                   Контактная информация:
                 </h2>
                 <div class="contact-details__input-wrapper">
-                  <label class="contact-details__details-field details-field">
-                    <p class="details-field__title">
+                  <label class="contact-details__field field">
+                    <p class="field__title">
                       Контактный телефон*:
                     </p>
-                    <input class="details-field__field"
+                    <input class="form__input form__input--icon"
                       type="tel"
                       placeholder="Введите телефон"
                       required>
                   </label>
-                  <label class="contact-details__details-field details-field">
-                    <p class="details-field__title">
+                  <label class="contact-details__field field">
+                    <p class="field__title">
                       Электронная почта*:
                     </p>
-                    <input class="details-field__field"
+                    <input class="form__input form__input--icon"
                       type="email"
                       placeholder="Введите e-mail"
                       required>
@@ -144,7 +142,7 @@
 
             <div class="form__general-feeling general-feeling">
               <div class="general-feeling__wrapper">
-                <h2 class="general-feeling__title">
+                <h2 class="form__title">
                   Ваше общее впечатление:
                 </h2>
                 <label class="general-feeling__input-radio input-radio">
@@ -181,7 +179,7 @@
 
             <div class="form__visited-places visited-places">
               <div class="visited-places__wrapper">
-                <h2 class="visited-places__title">
+                <h2 class="form__title">
                   Посещенные достопримечательности:
                 </h2>
                 <label class="visited-places__input-checkbox input-checkbox">
@@ -224,7 +222,7 @@
 
             <div class="form__comment-trip comment-trip">
               <div class="comment-trip__wrapper">
-                <h2 class="comment-trip__title">
+                <h2 class="form__title">
                   Опишите свои эмоции:
                 </h2>
                 <label class="comment-trip__review-field review-field">

@@ -1,0 +1,45 @@
+.card__wrapper {
+  background-color: @background-white;
+  padding: 20px;
+}
+
+.card__list {
+  .list-drop();
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card__item {
+  padding: 25px 0 25px;
+  border-bottom: 1px solid @gray-four;
+}
+
+.card__img {
+  width: 280px;
+  height: 280px;
+  background: url(../../../../img/jpeg/card/photo-card-1.jpeg) 50%/cover no-repeat;
+}
+
+.card__title {
+  .bold-card();
+  .list-drop();
+  padding: 15px 0;
+}
+
+.card__autour {
+  .list-drop();
+  color: @brown;
+  padding-bottom: 15px;
+}
+
+.like__button {
+  background-color: transparent;
+  border: none;
+}
+
+.like__amount {
+  .bold-card();
+  .list-drop();
+
+}

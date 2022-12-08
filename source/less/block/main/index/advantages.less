@@ -1,6 +1,5 @@
 // main: main.less
 
-
 .advantages__list {
   display: flex;
   flex-direction: column;
@@ -17,16 +16,18 @@
   background-color: @background-white;
 
   &--color-first {
+    display: flex;
+    flex-wrap: wrap;
     color: @white;
     background-color: @blue-primary;
   }
 
   &--color-second {
     background-color: @background-gray-second;
-  }
 
-  &--img {
-    display: contents;
+    &:not(:last-child) {
+      border-bottom: 1px solid @gray-five;
+    }
   }
 }
 

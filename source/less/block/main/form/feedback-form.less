@@ -1,0 +1,94 @@
+.feedback__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 0;
+  background-color: @white;
+}
+
+.form__field-wrapper {
+  padding: 0px 20px 56px;
+}
+
+.form__title {
+  .title-bold();
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+
+.field__title {
+  .title-description();
+  text-align: start;
+  padding-left: 16px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__input {
+  .bold-form();
+  padding: 16px;
+  margin-bottom: 16px;
+  border: none;
+  background-color: @background-gray-first;
+
+  &--phone {
+    background: url("../img/png/icon/phone.png") 100% 50% no-repeat;
+  }
+
+  &--mail {
+    background: url("../img/png/icon/mail.png") 100% 50% no-repeat;
+  }
+}
+
+.full-name__input-wrapper {
+  padding-bottom: 39px;
+}
+
+.contact-details__input-wrapper {
+  padding-bottom: 34px;
+}
+
+.general-feeling__input-radio-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 24px;
+}
+
+.visited-places__input-checkbox-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 24px;
+}
+
+.input-check {
+  margin-bottom: 16px;
+}
+
+.input-check__title {
+  .bold-form();
+  padding: 10px 0 10px 16px;
+}
+
+.review-field {
+  .list-drop();
+  .bold-form();
+  resize: none;
+  border: none;
+  background-color: @background-gray-first;
+  width: 100%;
+  min-height: 150px;
+  padding: 16px;
+}
+
+.form__button-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__required-title {
+  .title-description();
+  align-self: flex-end;
+  color: @brown;
+}

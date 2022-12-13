@@ -6,7 +6,7 @@
 }
 
 .form__field-wrapper {
-  padding: 0px 20px 56px;
+  padding: 0 20px;
 }
 
 .form__title {
@@ -26,20 +26,20 @@
   flex-direction: column;
 }
 
+.form__input--phone {
+  background: url("../img/png/icon/phone.png") 100% 50% no-repeat;
+}
+
+.form__input--mail {
+  background: url("../img/png/icon/mail.png") 100% 50% no-repeat;
+}
+
 .form__input {
   .bold-form();
   padding: 16px;
   margin-bottom: 16px;
   border: none;
   background-color: @background-gray-first;
-
-  &--phone {
-    background: url("../img/png/icon/phone.png") 100% 50% no-repeat;
-  }
-
-  &--mail {
-    background: url("../img/png/icon/mail.png") 100% 50% no-repeat;
-  }
 }
 
 .full-name__input-wrapper {
@@ -51,24 +51,17 @@
 }
 
 .general-feeling__input-radio-wrapper {
-  display: flex;
-  flex-direction: column;
+  .list-drop();
+  display: grid;
   padding-bottom: 24px;
+  margin: 0 auto;
 }
 
 .visited-places__input-checkbox-wrapper {
-  display: flex;
-  flex-direction: column;
+  .list-drop();
+  display: grid;
   padding-bottom: 24px;
-}
-
-.input-check {
-  margin-bottom: 16px;
-}
-
-.input-check__title {
-  .bold-form();
-  padding: 10px 0 10px 16px;
+  margin: 0 auto;
 }
 
 .review-field {
@@ -80,6 +73,10 @@
   width: 100%;
   min-height: 150px;
   padding: 16px;
+}
+
+.comment-trip__wrapper {
+  margin-bottom: 56px;
 }
 
 .form__button-wrapper {

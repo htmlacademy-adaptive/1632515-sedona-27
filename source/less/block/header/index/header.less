@@ -16,9 +16,14 @@
   padding: 0;
 }
 
+.main-nav__wrapper {
+  width: 100%;
+}
+
 .main-nav {
   display: flex;
   position: relative;
+  min-height: 56px;
 }
 
 .main-nav__list {
@@ -29,7 +34,6 @@
 
 .list__item {
   display: flex;
-  flex-direction: column;
   align-items: center;
 }
 
@@ -38,7 +42,7 @@
   .list-drop();
   font-size: 18px;
   color: @white;
-  padding: 17px 78px 12px;
+  padding: 17px 0 12px;
   background-color: @blue-primary;
   width: 100%;
   border-bottom: 1px solid @black;

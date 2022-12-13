@@ -30,8 +30,8 @@
               фото и видео
             </a>
             </li>
-            <li class="list__item list__item--current">
-            <a class="list__item-link" href="form.html" >
+            <li class="list__item">
+            <a class="list__item-link list__item-link--current" href="form.html" >
               форма отзыва
             </a>
             </li>
@@ -71,8 +71,8 @@
           <img class="hero-form__img" src="img/svg/main/title-sedona.svg" alt="Седона" >
         </div>
       </section>
-
-      <section class="intro-form">
+      <div class="content-form__container">
+        <section class="intro-form">
         <div class="intro-form__wrapper">
           <h2 class="intro-form__title">
             Оставьте свой отзыв
@@ -82,9 +82,8 @@
             оставьте отзыв о них, а также о посещенных вами достопримечательностях
           </p>
         </div>
-      </section>
-
-      <section class="feedback">
+        </section>
+        <section class="feedback">
         <div class="feedback__wrapper">
           <form class="feedback__form form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="form__field-wrapper">
@@ -158,36 +157,45 @@
                 <h2 class="form__title">
                   Ваше общее впечатление:
                 </h2>
-                <div class="general-feeling__input-radio-wrapper">
-                  <label class="general-feeling__input-check input-check">
-                    <input class="input-check__field"
+                <ul class="general-feeling__input-radio-wrapper">
+                  <li class="input-check__item">
+                    <label class="general-feeling__input-check input-check">
+                    <input class="input-check__field visually-hidden"
                       type="radio"
                       name="impression"
                       value="positive"
                       checked>
+                      <span class="input-check__mark"></span>
                       <span class="input-check__title">
                         Скорее положительные
                       </span>
-                  </label>
-                  <label class="general-feeling__input-check input-check">
-                    <input class="input-check__field"
+                    </label>
+                  </li>
+                  <li class="input-check__item">
+                    <label class="general-feeling__input-check input-check">
+                    <input class="input-check__field visually-hidden"
                       type="radio"
                       name="impression"
                       value="negative">
+                    <span class="input-check__mark"></span>
                     <span class="input-check__title">
                       Скорее отрицательные
                     </span>
-                  </label>
-                  <label class="general-feeling__input-check input-check">
-                    <input class="input-check__field"
+                    </label>
+                  </li>
+                  <li class="input-check__item">
+                    <label class="general-feeling__input-check input-check">
+                    <input class="input-check__field visually-hidden"
                       type="radio"
                       name="impression"
                       value="difficult">
+                    <span class="input-check__mark"></span>
                     <span class="input-check__title">
                       Затрудняюсь ответить
                     </span>
-                  </label>
-                </div>
+                    </label>
+                  </li>
+                </ul>
               </div>
               </div>
 
@@ -196,43 +204,55 @@
                 <h2 class="form__title">
                   Посещенные достопримечательности:
                 </h2>
-                <div class="visited-places__input-checkbox-wrapper">
-                  <label class="visited-places__input-check input-check">
-                    <input class="input-check__field"
+                <ul class="visited-places__input-checkbox-wrapper">
+                  <li class="input-check__item">
+                    <label class="visited-places__input-check input-check">
+                    <input class="input-check__field visually-hidden"
                       type="checkbox"
                       name="Bridge"
                       checked>
+                      <span class="input-check__mark"></span>
                       <span class="input-check__title">
                         Мост Дьявола
                       </span>
-                  </label>
-                  <label class="visited-places__input-check input-check">
-                    <input class="input-check__field"
+                    </label>
+                  </li>
+                  <li class="input-check__item">
+                    <label class="visited-places__input-check input-check">
+                    <input class="input-check__field visually-hidden"
                       type="checkbox"
                       name="mountain"
                       checked>
+                      <span class="input-check__mark"></span>
                       <span class="input-check__title">
                         Гора-Колокол
                       </span>
-                  </label>
-                  <label class="visited-places__input-check input-check">
-                    <input class="input-check__field"
+                    </label>
+                  </li>
+                  <li class="input-check__item">
+                    <label class="visited-places__input-check input-check">
+                    <input class="input-check__field visually-hidden"
                       type="checkbox"
                       name="park"
                       checked>
+                      <span class="input-check__mark"></span>
                       <span class="input-check__title">
                         Слайд-парк
                       </span>
-                  </label>
-                  <label class="visited-places__input-check input-check">
-                    <input class="input-check__field"
+                    </label>
+                  </li>
+                  <li class="input-check__item">
+                    <label class="visited-places__input-check input-check">
+                    <input class="input-check__field visually-hidden"
                       type="checkbox"
                       name="rock">
+                      <span class="input-check__mark"></span>
                       <span class="input-check__title">
                         Красные скалы
                       </span>
-                  </label>
-                </div>
+                    </label>
+                  </li>
+                </ul>
               </div>
               </div>
 
@@ -258,8 +278,8 @@
 
           </form>
         </div>
-
-      </section>
+        </section>
+      </div>
     </div>
   </main>
 
@@ -339,24 +359,27 @@
   </footer>
 
   <div class="form__popup popup popup-negative popup__disabled">
-    <div class="popup__wrapper">
-      <section class="popup__content-negative">
+    <div class="popup__wrapper popup__wrapper--negative">
+      <section class="popup__content popup__content--negative">
         <h2 class="popup__title">
           Что-то пошло не так!
         </h2>
         <p class="popup__text popup-negative-text">
           Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
         </p>
-        <button class="popup__button button">
-          ок
-        </button>
       </section>
+        <div class="popup__button-wrapper--negative">
+          <button class="popup__button button">
+            ок
+          </button>
+        </div>
+
     </div>
   </div>
 
   <div class="form__popup popup popup-positive popup__disabled">
-    <div class="popup__wrapper">
-      <section class="popup__content">
+    <div class="popup__wrapper popup__wrapper--positive">
+      <section class="popup__content popup__content--positive">
         <h2 class="popup__title">
           Ваш отзыв отправлен!
         </h2>
@@ -366,7 +389,7 @@
           В ближайшее время мы опубликуем его на сайте.
         </p>
       </section>
-      <div class="popup__button-wrapper">
+      <div class="popup__button-wrapper--positive">
         <button class="popup__button button">
           Закрыть окно
         </button>

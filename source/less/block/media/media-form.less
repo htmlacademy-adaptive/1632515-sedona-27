@@ -1,0 +1,125 @@
+@media (min-width: @tablet-width) {
+  //HERO
+
+  .hero-form__wrapper {
+    min-height: 290px;
+  }
+
+  .intro-form__wrapper {
+    max-width: 435px;
+  }
+
+  //FEEDBACK FIELD
+
+  .full-name {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .full-name__wrapper {
+    max-width: 280px;
+  }
+
+  .full-name__contact-details {
+    max-width: 300px;
+    margin-left: auto;
+  }
+
+  .general-feeling__input-radio-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 576px;
+  }
+
+  .visited-places__input-checkbox-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 480px;
+  }
+
+  .form__button-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .form__button {
+    max-width: 354px;
+  }
+
+  .content-form__container {
+    padding: 66px 60px 40px;
+    background-color: @white;
+  }
+
+  .form__field-wrapper {
+    padding: 0;
+  }
+
+  //POP UP
+
+  .popup__wrapper {
+    &--positive {
+      min-width: 640px;
+    }
+
+    &--negative {
+      min-width: 400px;
+    }
+  }
+
+  .popup__content--positive {
+    max-width: 444px;
+  }
+
+  .popup__content--negative {
+    max-width: 307px;
+  }
+
+  .popup__button-wrapper--positive button {
+    max-width: 458px;
+  }
+
+  .popup__button-wrapper {
+    &--positive {
+      width: 640px;
+    }
+
+    &--negative {
+      width: 272px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  //HERO
+
+  .hero-form__wrapper {
+    min-height: 300px;
+  }
+
+  .intro-form__wrapper {
+    max-width: 434px;
+  }
+
+  //FEEDBACK FIELD
+
+  .full-name__wrapper {
+    max-width: 430px;
+  }
+
+  .full-name__contact-details {
+    max-width: 402px;
+  }
+
+  .general-feeling__input-radio-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 960px;
+  }
+
+  .visited-places__input-checkbox-wrapper {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 960px;
+  }
+
+  .form__button {
+    max-width: 384px;
+  }
+}

@@ -21,8 +21,8 @@
         <nav class="main-nav">
           <div class="main-nav__wrapper">
             <ul class="main-nav__list list">
-              <li class="list__item list__item--current">
-                <a class="list__item-link" href="#" >
+              <li class="list__item">
+                <a class="list__item-link list__item-link--current" href="#" >
                   главная
                 </a>
               </li>
@@ -86,7 +86,7 @@
           <div class="advantages__wrapper">
             <h2 class="visually-hidden">преимущества Седоны.</h2>
             <ul class="advantages__list">
-              <li class="advantges__item advantages__item--color-first">
+              <li class="advantages__item advantages__item--color-first">
                 <div class="advantages__item-wrapper">
                   <h2 class="advantages__title">
                     настоящий городок
@@ -98,7 +98,13 @@
                     Седона — не аттракцион для туристов, там течёт своя жизнь
                   </p>
                 </div>
-                <img class="advantages__img" src="img/jpeg/advantage/town-mob.jpg" width="320" height="260" alt="городок Седона" >
+                <picture class="advantage__picture">
+                  <source srcset="img/jpeg/advantage/town1200.jpg" type="image/jpeg" media="(min-width:1200px)">
+                  <source srcset="img/jpeg/advantage/town768.jpg" type="image/jpeg" media="(min-width:768px)">
+                  <source srcset="img/jpeg/advantage/town320.jpg" type="image/jpeg" media="(min-width:320px)">
+                  <img class="advantages__img" src="img/jpeg/advantage/town320.jpg" alt="городок Седона" >
+                </picture>
+
               </li>
 
               <li class="advantages__item features">
@@ -155,7 +161,12 @@
                     да, по нему можно пройти! если вы осмелитесь, конечно
                   </p>
                 </div>
-                <img class="advantages__img" src="img/jpeg/advantage/bridge-mob.jpg" width="320" height="260" alt="мост дьявола">
+                <picture class="advantage__picture">
+                  <source srcset="img/jpeg/advantage/bridge1200.jpg" type="image/jpeg" media="(min-width:1200px)">
+                  <source srcset="img/jpeg/advantage/bridge768.jpg" type="image/jpeg" media="(min-width:768px)">
+                  <source srcset="img/jpeg/advantage/bridge320.jpg" type="image/jpeg" media="(min-width:320px)">
+                  <img class="advantages__img" src="img/jpeg/advantage/bridge320.jpg" alt="мост дьявола" >
+                </picture>
               </li>
 
               <li class="advantages__item advantages__item--color-second">

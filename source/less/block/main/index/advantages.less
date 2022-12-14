@@ -1,7 +1,4 @@
 .advantages__list {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
   .list-drop();
 }
 
@@ -12,10 +9,9 @@
 .advantages__item {
   .list-drop();
   background-color: @background-white;
+  align-items: center;
 
   &--color-first {
-    display: flex;
-    flex-wrap: wrap;
     color: @white;
     background-color: @blue-primary;
   }
@@ -58,4 +54,9 @@
 
 .advantages__description-features {
   text-align: start;
+}
+
+.advantage__picture {
+  display: flex;
+  grid-column: span 2;
 }

@@ -1,0 +1,53 @@
+.input-check {
+  position: relative;
+  display: block;
+  padding-left: 40px;
+  margin-bottom: 16px;
+}
+
+.input-check__title {
+  .bold-form();
+  padding: 10px 0 10px 16px;
+}
+
+.input-check__item {
+  margin-bottom: 20px;
+}
+
+.input-check__mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 46px;
+  height: 46px;
+  transform: translateY(-20%);
+  border-radius: 4px;
+  background-color: @background-gray-first;
+}
+
+.input-check__field[type="radio"] + .input-check__mark {
+  border-radius: 50%;
+}
+
+.input-check__field[type="radio"]:checked + .input-check__mark::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
+  background-color: @brown;
+  border-radius: 50%;
+}
+
+.input-check__field[type="checkbox"]:checked + .input-check__mark::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 22px;
+  height: 16px;
+  background: url("../img/svg/mark/check.svg");
+}

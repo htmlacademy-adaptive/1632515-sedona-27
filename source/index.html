@@ -18,7 +18,7 @@
             <img class="main-header__logo-image" src="img/svg/logo/logo.svg" width="185" height="96" alt="логотип города Седона">
           </a>
         </div>
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
           <div class="main-nav__wrapper">
             <ul class="main-nav__list list">
               <li class="list__item">
@@ -47,16 +47,6 @@
             <span class="visually-hidden">
               открыть меню.
             </span>
-            <svg
-              aria-hidden="true"
-              focusable="false"
-              xmlns="http://www.w3.org/2000/svg"
-              width="32"
-              height="32"
-              fill="currentColor"
-              viewBox="0 0 32 32">
-            <path d="M28 6H4v4h24V6ZM28 14H4v4h24v-4ZM28 22H4v4h24v-4Z"/>
-            </svg>
           </button>
         </nav>
       </div>
@@ -104,45 +94,44 @@
                   <source srcset="img/jpeg/advantage/town320.jpg" type="image/jpeg" media="(min-width:320px)">
                   <img class="advantages__img" src="img/jpeg/advantage/town320.jpg" alt="городок Седона" >
                 </picture>
-
               </li>
 
-              <li class="advantages__item features">
+              <li class="advantages__item advantages__item--features">
                 <div class="advantages__item-wrapper features__wrapper">
                   <img class="advantages__features-img" src="img/svg/features/home.svg" width="40" height="40" alt="">
                   <div class="advantages__item-wrapper-text">
-                    <h2 class="advantages__title advantages__title-features">
+                    <h2 class="advantages__title advantages__title--features">
                       жилье
                     </h2>
-                    <p class="advantages__description advantages__description-features">
+                    <p class="advantages__description advantages__description--features">
                       Рекомендуем пожить в настоящем мотеле, все как в кино!
                     </p>
                   </div>
                 </div>
               </li>
 
-              <li class="advantages__item features">
+              <li class="advantages__item advantages__item--features">
                 <div class="advantages__item-wrapper features__wrapper">
                   <img class="advantages__features-img" src="img/svg/features/burger.svg" width="40" height="40" alt="">
                   <div class="advantages__item-wrapper-text">
-                    <h2 class="advantages__title advantages__title-features">
+                    <h2 class="advantages__title advantages__title--features">
                       еда
                     </h2>
-                    <p class="advantages__description advantages__description-features">
-                      Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
+                    <p class="advantages__description advantages__description--features">
+                      Всегда заказывайте фирменный бургер, вы не разочаруетесь!
                     </p>
                   </div>
                 </div>
               </li>
 
-              <li class="advantages__item features">
+              <li class="advantages__item advantages__item--features">
                 <div class="advantages__item-wrapper features__wrapper">
                   <img class="advantages__features-img" src="img/svg/features/gift.svg" width="40" height="40" alt="">
                   <div class="advantages__item-wrapper-text">
-                    <h2 class="advantages__title advantages__title-features">
+                    <h2 class="advantages__title advantages__title--features">
                       сувениры
                     </h2>
-                    <p class="advantages__description advantages__description-features">
+                    <p class="advantages__description advantages__description--features">
                       Не только китайского, но и настоящего местного производства!
                     </p>
                   </div>
@@ -150,7 +139,7 @@
               </li>
 
               <li class="advantages__item advantages__item--color-first">
-                <div class="advantages__item-wrapper">
+                <div class="advantages__item-wrapper advantages__item-wrapper--rotate">
                   <h2 class="advantages__title">
                     там есть мост дьявола
                   </h2>
@@ -316,6 +305,6 @@
         </div>
       </div>
     </footer>
-
+    <script src="js/menu-mobile.js"></script>
   </body>
 </html>

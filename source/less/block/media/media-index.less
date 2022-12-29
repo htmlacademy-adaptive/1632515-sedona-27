@@ -1,6 +1,10 @@
 @media (min-width: @tablet-width) {
 
   //HEADER
+  .main-header__logo-wrapper {
+    z-index: 2;
+  }
+
   .main-nav__toggle {
     display: none;
   }
@@ -15,6 +19,10 @@
     grid-column: 4/5;
   }
 
+  .list__item:last-child .list__item-link {
+    box-shadow: none;
+  }
+
   .list__item-link {
     font-size: 14px;
     line-height: 21px;
@@ -26,15 +34,25 @@
     &--current {
       color: @text-current;
     }
+
+    &:hover {
+      background-color: darken(@white, 3%);
+    }
+
+    &:active {
+      color: fadeout(@black, 40%);
+      background-color: darken(@white, 15%);
+    }
   }
 
   //HERO
-  .hero__wrapper {
+  .hero {
     margin-bottom: 47.5px;
   }
 
   .intro {
-    padding: 0 40px;
+    padding: 0 60px;
+    margin-bottom: 55.5px;
   }
 
   .intro__wrapper {
@@ -47,6 +65,14 @@
   }
 
   //MAIN
+  .decoration-second {
+    display: none;
+  }
+
+  .advantages {
+    margin-bottom: 61px;
+  }
+
   .advantages__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -68,6 +94,14 @@
 
   .advantages__item--color-second {
     .flex-center();
+  }
+
+  .advantages__item.advantages__item--color-second {
+    border-bottom: none;
+  }
+
+  .advantages__item:first-child {
+    padding: 0;
   }
 
   .advantages__item--features {
@@ -99,32 +133,71 @@
   }
 
   //SEARCH
+  .search {
+    margin-bottom: 58px;
+  }
+
+  .search__wrapper {
+    padding: 0;
+    width: 100%;
+  }
+
   .search__title {
     font-size: 30px;
   }
 
+  .search__br {
+    display: block;
+  }
+
+  .maps {
+    margin: 0;
+  }
+
   //FOOTER
   .main-footer__wrapper {
     flex-direction: row;
     width: 100%;
+    min-height: 120px;
+    padding: 36px 45px;
+  }
+
+  .social__list {
+    max-width: 216px;
   }
 }
+
+
+
 
 @media (min-width: @desktop-width) {
 
   //HERO
-  .hero__wrapper {
+  .hero {
     margin-bottom: 59px;
+  }
+
+  .intro {
+    margin-bottom: 44px;
   }
 
   .intro__wrapper {
     max-width: 484px;
-    margin-bottom: 44px;
+  }
+
+  //SEARCH
+
+  .search {
+    margin-bottom: 66px;
   }
 
   //FOOTER
   .main-footer__wrapper {
     flex-direction: row;
     width: 100%;
+  }
+
+  .social__list {
+    max-width: 2326px;
   }
 }

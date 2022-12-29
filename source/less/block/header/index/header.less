@@ -46,7 +46,24 @@
   background-color: @blue-primary;
   min-height: 55px;
   width: 100%;
-  border-bottom: 1px solid @black;
+
+  &:hover {
+    background-color: @blue-hover;
+  }
+
+  &:active {
+    color: fadeout(@white, 70%);
+    background-color: @blue-active;
+  }
+}
+
+.list__item-link {
+  border-top: 1px solid @border-first;
+  border-bottom: 1px solid @border-second;
+}
+
+.list__item:last-child .list__item-link {
+  box-shadow: 0px -8px 10px 0px @shadow inset;
 }
 
 .main-nav__toggle {
@@ -61,7 +78,17 @@
   color: @blue-primary;
   border: none;
   cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
+
+
 
 .main-nav--closed .main-nav__toggle::before {
   content: "";

@@ -1,12 +1,13 @@
 .search {
   .flex-center();
   background-color: @background-white;
+  margin-bottom: 49px;
 }
 
 .search__wrapper {
   .flex-center();
   flex-direction: column;
-  padding: 42px 18px 48px;
+  padding: 0 18px;
   max-width: 458px;
 }
 
@@ -19,6 +20,27 @@
 .search__description {
   .title-description();
   padding-bottom: 24px;
+}
+
+.search__br {
+  display: none;
+}
+
+.search__button {
+
+  &:hover {
+    background-color: @blue-hover;
+  }
+
+  &:active {
+    background-color: @blue-active;
+    color: fadeout(@white, 70%);
+  }
+}
+
+.maps {
+  display: flex;
+  margin-bottom: 10px;
 }
 
 .maps__content {

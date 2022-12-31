@@ -3,15 +3,15 @@
   //HERO
   .hero-catalog {
     margin-bottom: 66px;
+    background-position: 50% 100%, 50% 100%;
   }
 
   .hero-catalog__wrapper {
     min-height: 290px;
   }
 
-  .intro-catalog__wrapper {
-    max-width: 458px;
-    margin: 0 auto;
+  .intro-catalog {
+    margin-bottom: 67px;
   }
 
   .intro-catalog__title {
@@ -19,20 +19,35 @@
   }
 
   //CARD
+  .card {
+    margin-bottom: 58px;
+  }
+
   .card__wrapper {
-    padding: 67px 0 58px;
+    padding: 0 60px;
   }
 
   .card__list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    max-width: 648px;
+    margin: 0 auto;
   }
 
   .card__item {
     padding: 0;
+    border: none;
+
+    &:last-child {
+      border: none;
+    }
   }
 
-  .card__item--preview {
+  // .card__item--preview {
+  //
+  // }
+
+  .card__item:first-child {
     grid-column: 1/-1;
   }
 
@@ -45,6 +60,15 @@
     grid-template-columns: 2fr 1fr;
     align-items: center;
     padding: 0 20px;
+    background-color: @background-gray-first;
+  }
+
+  .card__picture:hover+.card__autour-container {
+    background-color: darken(@background-gray-first, 10%);
+  }
+
+  .card__title {
+    padding-top: 15px;
   }
 
   .card__autour {
@@ -58,15 +82,27 @@
   }
 
   //VIDEO
+  .video-catalog {
+    margin-bottom: 40px;
+  }
+
   .video-catalog__wrapper {
-    max-width: 648px;
-    margin: 0 auto;
+    padding: 0 60px;
+  }
+
+  .video-catalog__title {
+    font-size: 30px;
   }
 
   .video-catalog__wrapper-text {
-    max-width: 445px;
+    padding: 0;
+    margin-bottom: 66px;
   }
 }
+
+
+
+
 
 @media (min-width: @desktop-width) {
 
@@ -79,17 +115,22 @@
     min-height: 300px;
   }
 
+  .intro-catalog {
+    margin-bottom: 65px;
+  }
+
   //CARD
-  .content-catalog__container {
-    padding: 100px 0;
+  .card {
+    margin-bottom: 62px;
   }
 
   .card__wrapper {
-    padding: 65px 0 62px;
+    padding: 0;
   }
 
   .card__list {
     grid-template-columns: repeat(3, 1fr);
+    max-width: 100%;
   }
 
   .card__item {
@@ -101,9 +142,23 @@
     position: absolute;
     bottom: 0;
     width: 100%;
+    background-color: fadeout(@black, 70%);
+    color: @white;
+  }
+
+  .card__picture:hover+.card__autour-container {
+    background-color: fadeout(@black, 30%);
+  }
+
+  .like__button svg {
+    opacity: 1;
   }
 
   //VIDEO
+  .video-catalog {
+    margin-bottom: 84px;
+  }
+
   .video-catalog__wrapper {
     max-width: 800px;
   }

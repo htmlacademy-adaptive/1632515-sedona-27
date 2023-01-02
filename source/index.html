@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона</title>
     <link rel="icon" href="favicon.ico">
-    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicon/180.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
@@ -59,7 +61,10 @@
             <h1 class="visually-hidden">
               Добро пожаловать в Седону.
             </h1>
-            <img class="hero__img" src="img/svg/main/title-welcome.svg" alt="welcome to the gorgeous sedona because the grand canyon sucks." >
+            <img class="hero__img" src="img/svg/main/title-welcome.svg"
+              width="282"
+              height="214"
+              alt="welcome to the gorgeous sedona because the grand canyon sucks.">
           </div>
         </section>
         <section class="intro">
@@ -89,12 +94,15 @@
                     Седона — не аттракцион для туристов, там течёт своя жизнь
                   </p>
                 </div>
-                <picture class="advantage__picture">
-                  <source srcset="img/jpeg/advantage/town1200.jpg" type="image/jpeg" media="(min-width:1200px)">
-                  <source srcset="img/jpeg/advantage/town768.jpg" type="image/jpeg" media="(min-width:768px)">
-                  <source srcset="img/jpeg/advantage/town320.jpg" type="image/jpeg" media="(min-width:320px)">
-                  <img class="advantages__img" src="img/jpeg/advantage/town320.jpg" alt="городок Седона" >
-                </picture>
+                <div class="advantages__picture">
+                  <picture>
+                    <source srcset="img/jpeg/advantage/desktop/town800@1x.jpg 1x, img/jpeg/advantage/desktop/town800@2x.jpg 2x"  width="800" height="256" type="image/jpeg" media="(min-width:1200px)">
+                    <source srcset="img/jpeg/advantage/tablet/town512@1x.jpg 1x, img/jpeg/advantage/tablet/town512@2x.jpg 2x" width="512" height="256" type="image/jpeg" media="(min-width:768px)">
+                    <source srcset="img/jpeg/advantage/mobile/town520@1x.jpg 1x, img/jpeg/advantage/mobile/town520@2x.jpg 2x" width="520" height="260" type="image/jpeg" media="(min-width:321px)">
+                    <img class="advantages__img" src="img/jpeg/advantage/mobile/town320@1x.jpg" width="320" height="260"
+                    srcset="img/jpeg/advantage/mobile/town320@1x.jpg 1x, img/jpeg/advantage/mobile/town320@2x.jpg 2x" alt="городок Седона" >
+                  </picture>
+                </div>
               </li>
 
               <li class="advantages__item advantages__item--features">
@@ -151,12 +159,16 @@
                     да, по нему можно пройти! если вы осмелитесь, конечно
                   </p>
                 </div>
-                <picture class="advantage__picture">
-                  <source srcset="img/jpeg/advantage/bridge1200.jpg" type="image/jpeg" media="(min-width:1200px)">
-                  <source srcset="img/jpeg/advantage/bridge768.jpg" type="image/jpeg" media="(min-width:768px)">
-                  <source srcset="img/jpeg/advantage/bridge320.jpg" type="image/jpeg" media="(min-width:320px)">
-                  <img class="advantages__img" src="img/jpeg/advantage/bridge320.jpg" alt="мост дьявола" >
-                </picture>
+                <div class="advantages__picture">
+                  <picture>
+                    <source srcset="img/jpeg/advantage/desktop/bridge800@1x.jpg 1x, img/jpeg/advantage/desktop/bridge800@2x.jpg 2x" width="800" height="256" type="image/jpeg" media="(min-width:1200px)">
+                    <source srcset="img/jpeg/advantage/tablet/bridge512@1x.jpg 1x, img/jpeg/advantage/tablet/bridge512@2x.jpg 2x" width="512" height="256" type="image/jpeg" media="(min-width:768px)">
+                    <source srcset="img/jpeg/advantage/mobile/bridge520@1x.jpg 1x, img/jpeg/advantage/mobile/bridge520@2x.jpg 2x" width="520" height="260" type="image/jpeg" media="(min-width:321px)">
+                    <img class="advantages__img" src="img/jpeg/advantage/mobile/bridge320@1x.jpg" width="320" height="260"
+                      srcset="img/jpeg/advantage/mobile/bridge320@1x.jpg 1x, img/jpeg/advantage/mobile/bridge320@2x.jpg 2x"
+                      alt="мост дьявола" >
+                  </picture>
+                </div>
               </li>
 
               <li class="advantages__item advantages__item--color-second">
@@ -181,8 +193,12 @@
                   <p class="advantages__number">
                     — №4 —
                   </p>
-                  <p class="advantages__description">
-                    ехать в седону из лас-вегаса совсем не скучно!
+                  <p class="advantages__description description">
+                    ехать в седону из лас-
+                      <br class="description__br">
+                        вегаса совсем
+                      <br class="description__br description__br--second">
+                         не скучно!
                   </p>
                 </div>
               </li>

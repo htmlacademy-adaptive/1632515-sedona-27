@@ -2,10 +2,21 @@
   width: 100%;
   background:
     url("../img/svg/decoration/triangle-first.svg") no-repeat,
-    url("../img/jpeg/background/back-hero.jpg") no-repeat;
+    url("../img/jpeg/background/mobile/back-mobile@1x.jpg") no-repeat;
   background-color: @background-safe;
   background-position: 50% 100%, 50% 10%;
   margin-bottom: 32px;
+}
+
+@media (min-resolution: 2dppx) {
+  .hero {
+    background:
+      url("../img/svg/decoration/triangle-first.svg") no-repeat,
+      url("../img/jpeg/background/mobile/back-mobile@2x.jpg") no-repeat;
+    background-color: @background-safe;
+    background-position: 50% 100%, 50% 30%;
+    background-size: auto, 901px 389px;
+  }
 }
 
 .hero__wrapper {

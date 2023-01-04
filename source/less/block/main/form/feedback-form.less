@@ -1,18 +1,31 @@
+.feedback {
+  margin-bottom: 24px;
+}
+
 .feedback__wrapper {
   display: flex;
   flex-direction: column;
-  padding: 24px 0;
   background-color: @white;
 }
 
 .form__field-wrapper {
-  padding: 0 20px;
+  padding: 0 0 56px;
 }
 
 .form__title {
   .title-bold();
+  max-width: 308px;
   font-size: 18px;
-  padding-bottom: 20px;
+  padding-top: 24px;
+  margin: 0 auto 20px;
+}
+
+.field__part {
+  border-top: 1px solid @border-third;
+}
+
+.content-form {
+  padding: 0 20px;
 }
 
 .field__title {
@@ -40,10 +53,16 @@
   margin-bottom: 16px;
   border: none;
   background-color: @background-gray-first;
-}
+  cursor: pointer;
 
-.full-name__input-wrapper {
-  padding-bottom: 39px;
+  &:hover {
+    background-color: @gray-four;
+  }
+
+  &:active {
+    background-color: @white;
+    outline: 4px solid @gray-four;
+  }
 }
 
 .contact-details__input-wrapper {
@@ -69,23 +88,39 @@
   .bold-form();
   resize: none;
   border: none;
+  display: block;
   background-color: @background-gray-first;
   width: 100%;
+  max-width: 768px;
   min-height: 150px;
   padding: 16px;
-}
+  margin: 0 auto;
 
-.comment-trip__wrapper {
-  margin-bottom: 56px;
+  &:hover {
+    background-color: @gray-four;
+  }
 }
 
 .form__button-wrapper {
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
+}
+
+.form__button {
+  &:hover {
+    background-color: @blue-hover;
+  }
+
+  &:active {
+    background-color: @blue-active;
+    color: fadeout(@white, 70%);
+  }
 }
 
 .form__required-title {
   .title-description();
   align-self: flex-end;
   color: @brown;
+  font-size: 12px;
 }

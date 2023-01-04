@@ -1,10 +1,14 @@
+.card {
+  margin-bottom: 17px;
+}
+
 .content-catalog__container {
   padding: 0 20px;
   background-color: @white;
 }
 
 .card__wrapper {
-  .flex-center();
+  // .flex-center();
   background-color: @background-white;
 }
 
@@ -13,29 +17,53 @@
 }
 
 .card__item {
+  display: grid;
+  justify-content: center;
   padding: 25px 0 25px;
-  border-bottom: 1px solid @gray-four;
+  border-top: 1px solid @gray-four;
+
+  &:last-child {
+    border-bottom: 1px solid @gray-four;
+  }
+}
+
+.card__autour-container {
+  padding: 15px 0 0 0;
+  color: @black;
 }
 
 .card__title {
   .bold-card();
   .list-drop();
-  padding: 15px 0;
+  max-width: 210px;
+  color: inherit;
 }
 
 .card__autour {
   .list-drop();
-  color: @brown;
   padding-bottom: 15px;
+  max-width: 210px;
+  color: inherit;
+}
+
+.card__like {
+  max-width: 100px;
 }
 
 .like__button {
   background-color: transparent;
   border: none;
   cursor: pointer;
+  color: inherit;
+
+  & svg {
+    opacity: 0.3;
+  }
 }
 
 .like__amount {
   .bold-card();
   .list-drop();
+  max-width: 40px;
+  color: inherit;
 }

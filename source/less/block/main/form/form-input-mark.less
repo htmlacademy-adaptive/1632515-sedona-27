@@ -3,6 +3,7 @@
   display: block;
   padding-left: 40px;
   margin-bottom: 16px;
+  cursor: pointer;
 }
 
 .input-check__title {
@@ -50,4 +51,31 @@
   width: 22px;
   height: 16px;
   background: url("../img/svg/mark/check.svg");
+}
+
+
+.input-check__field:focus-visible + .input-check__mark {
+  outline: 2px solid @black;
+}
+
+@supports not selector(:focus-visible) {
+  .input-check__field:focus + .input-check__mark {
+    outline: 2px solid @black;
+  }
+}
+
+.input-check__field:hover + .input-check__mark {
+  background-color: @gray-four;
+}
+
+.input-check__field:active + .input-check__mark {
+  background-color: @gray-check-active;
+}
+
+.input-check__field:active + .input-check__mark::before {
+  opacity: 0.3;
+}
+
+.input-check__field:active + .input-check__mark::after {
+  opacity: 0.3;
 }

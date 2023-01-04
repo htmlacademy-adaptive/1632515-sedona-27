@@ -1,15 +1,25 @@
 .hero-catalog {
   width: 100%;
   background:
-    url("../img/jpeg/background/hero-decorations.svg") no-repeat,
-    url("../img/jpeg/background/back-hero.jpg") no-repeat;
+    url("../img/svg/decoration/triangle-first.svg") no-repeat,
+    url("../img/jpeg/background/mobile/catalog-back-mobile@1x.jpg") no-repeat;
   background-color: @background-safe;
-  background-position: 50% 100%, 50%;
-  justify-content: center;
-  text-align: center;
+  background-position: 50% 100%, 50% 70%;
+  margin-bottom: 37px;
+}
+
+@media (min-resolution: 2dppx) {
+  .hero-catalog {
+    background:
+      url("../img/svg/decoration/triangle-first.svg") no-repeat,
+      url("../img/jpeg/background/mobile/catalog-back-mobile@2x.jpg") no-repeat;
+    background-color: @background-safe;
+    background-position: 50% 100%, 50% 70%;
+    background-size: auto, 902px 214px;
+  }
 }
 
 .hero-catalog__wrapper {
   .flex-center();
-  min-height: 158px;
+  min-height: 160px;
 }

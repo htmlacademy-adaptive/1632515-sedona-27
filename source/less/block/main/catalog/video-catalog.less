@@ -2,19 +2,39 @@
   .flex-center();
   flex-direction: column;
   background-color: @background-white;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.video-catalog__wrapper-text {
+  max-width: 445px;
+  margin-bottom: 38px;
 }
 
 .video-catalog__title {
   .title-bold();
   font-size: 18px;
-  padding-bottom: 38px;
+  padding-bottom: 30px;
 }
 
 .video-catalog__description {
   .title-description();
-  padding-bottom: 38px;
 }
 
 .video-catalog__player {
-  width: 100%;
+  min-height: 177px;
+  width: 280px;
+  max-width: 100%;
+  background: url("../img/jpeg/poster/holder-mobile@1x.jpg") no-repeat;
+  background-size: 280px 177px;
+}
+
+@media (min-resolution: 2dppx) {
+  .video-catalog__player {
+    min-height: 177px;
+    width: 280px;
+    max-width: 100%;
+    background: url("../img/jpeg/poster/holder-mobile@2x.jpg") no-repeat;
+    background-size: 280px 177px;
+  }
 }

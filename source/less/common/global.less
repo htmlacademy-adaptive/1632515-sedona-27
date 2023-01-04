@@ -6,7 +6,9 @@
 
 img {
   max-width: 100%;
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
+  display: block;
 }
 
 body {
@@ -15,13 +17,18 @@ body {
   line-height: 21px;
   font-weight: 400;
   color: @black;
-  background-color: @background-gray-first;
+  background-color: @white;
   min-height: 100%;
   margin: 0;
+  word-break: break-word;
+}
+
+.page {
+  background-color: @background-gray-first;
 }
 
 .page__body {
-  width: 320px;
+  max-width: 767px;
   margin: 0 auto;
 }
 
@@ -31,12 +38,12 @@ body {
 
 @media (min-width: @tablet-width) {
   .page__body {
-    width: 768px;
+    max-width: 1100px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .page__body {
-    width: 1200px;
+    max-width: 1200px;
   }
 }

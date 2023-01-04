@@ -78,9 +78,13 @@
     align-items: center;
     padding: 0 20px;
     background-color: @background-gray-first;
+
+    &:hover {
+      background-color: darken(@background-gray-first, 10%);
+    }
   }
 
-  .card__picture:hover+.card__autour-container {
+  .card__link:hover + .card__autour-container {
     background-color: darken(@background-gray-first, 10%);
   }
 
@@ -135,12 +139,7 @@
   }
 }
 
-
-
-
-
-
-
+//.............DESKTOP..........................
 @media (min-width: @desktop-width) {
 
   //HERO
@@ -186,9 +185,13 @@
     width: 100%;
     background-color: fadeout(@black, 70%);
     color: @white;
+
+    &:hover {
+      background-color: fadeout(@black, 30%);
+    }
   }
 
-  .card__picture:hover+.card__autour-container {
+  .card__link:hover + .card__autour-container {
     background-color: fadeout(@black, 30%);
   }
 

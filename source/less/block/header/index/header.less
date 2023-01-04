@@ -46,6 +46,8 @@
   background-color: @blue-primary;
   min-height: 55px;
   width: 100%;
+  border-top: 1px solid @border-first;
+  border-bottom: 1px solid @border-second;
 
   &:hover {
     background-color: @blue-hover;
@@ -57,13 +59,8 @@
   }
 }
 
-.list__item-link {
-  border-top: 1px solid @border-first;
-  border-bottom: 1px solid @border-second;
-}
-
 .list__item:last-child .list__item-link {
-  box-shadow: 0px -8px 10px 0px @shadow inset;
+  box-shadow: 0 -8px 10px 0 @shadow inset;
 }
 
 .main-nav__toggle {
@@ -88,8 +85,6 @@
   }
 }
 
-
-
 .main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
@@ -109,7 +104,6 @@
 }
 
 .main-nav--opened .main-nav__toggle {
-
   &::before,
   &::after {
     content: "";

@@ -37,6 +37,7 @@
 
     &:hover {
       background-color: darken(@white, 3%);
+      border-radius: 5%;
     }
 
     &:active {
@@ -146,8 +147,24 @@
     min-height: 331px;
   }
 
-  .advantages__features-img {
+  .features__img {
+    margin: 0;
     margin-bottom: 26px;
+
+    &--home {
+      width: 77px;
+      height: 72px;
+    }
+
+    &--food {
+      width: 80px;
+      height: 68px;
+    }
+
+    &--gift {
+      width: 66px;
+      height: 75px;
+    }
   }
 
   .features__wrapper {
@@ -204,9 +221,7 @@
   }
 }
 
-
-
-
+//..............DESKTOP..........
 @media (min-width: @desktop-width) {
 
   //HERO
@@ -231,6 +246,25 @@
     }
   }
 
+  .features__img {
+    margin-bottom: 27px;
+
+    &--home {
+      width: 79px;
+      height: 72px;
+    }
+
+    &--food {
+      width: 73px;
+      height: 68px;
+    }
+
+    &--gift {
+      width: 77px;
+      height: 75px;
+    }
+  }
+
   //SEARCH
   .search {
     margin-bottom: 66px;
@@ -243,6 +277,6 @@
   }
 
   .social__list {
-    max-width: 2326px;
+    max-width: 326px;
   }
 }

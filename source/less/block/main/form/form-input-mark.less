@@ -26,11 +26,11 @@
   background-color: @background-gray-first;
 }
 
-.input-check__field[type="radio"]+.input-check__mark {
+.input-check__field[type="radio"] + .input-check__mark {
   border-radius: 50%;
 }
 
-.input-check__field[type="radio"]:checked+.input-check__mark::before {
+.input-check__field[type="radio"]:checked + .input-check__mark::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -42,7 +42,7 @@
   border-radius: 50%;
 }
 
-.input-check__field[type="checkbox"]:checked+.input-check__mark::after {
+.input-check__field[type="checkbox"]:checked + .input-check__mark::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -54,28 +54,28 @@
 }
 
 
-.input-check__field:focus-visible+.input-check__mark {
-  outline: 2px solid black;
+.input-check__field:focus-visible + .input-check__mark {
+  outline: 2px solid @black;
 }
 
 @supports not selector(:focus-visible) {
-  .input-check__field:focus+.input-check__mark {
-    outline: 2px solid black;
+  .input-check__field:focus + .input-check__mark {
+    outline: 2px solid @black;
   }
 }
 
-.input-check__field:hover+.input-check__mark {
+.input-check__field:hover + .input-check__mark {
   background-color: @gray-four;
 }
 
-.input-check__field:active+.input-check__mark {
+.input-check__field:active + .input-check__mark {
   background-color: @gray-check-active;
 }
 
-.input-check__field:active+.input-check__mark::before {
+.input-check__field:active + .input-check__mark::before {
   opacity: 0.3;
 }
 
-.input-check__field:active+.input-check__mark::after {
+.input-check__field:active + .input-check__mark::after {
   opacity: 0.3;
 }

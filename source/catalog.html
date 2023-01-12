@@ -12,12 +12,11 @@
   <title>Галерея</title>
 </head>
 <body class="page__body">
-
   <header class="main-header">
       <div class="main-header__wrapper">
         <div class="main-header__logo-wrapper">
           <a class="main-header__logo" href="index.html">
-            <img class="main-header__logo-image" src="img/svg/logo/logo.svg" width="185" height="96" alt="логотип города Седона.">
+            <img class="main-header__logo-image" src="img/svg/logo__sedona.svg" width="185" height="96" alt="логотип города Седона.">
           </a>
         </div>
         <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -62,7 +61,7 @@
             Седона.
           </h1>
           <img class="hero-catalog__img"
-            src="img/svg/main/title-sedona.svg"
+            src="img/svg/title-sedona.svg"
             width="229"
             height="39"
             alt="Седона" >
@@ -89,6 +88,10 @@
                   <span class="visually-hidden">открыть оригинал фото</span>
                   <div class="card__picture">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/jpeg/card/card1/desktop-card-1@1x.webp 1x, img/jpeg/card/card1/desktop-card-1@2x.webp 2x" width="1200" height="400">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/jpeg/card/card1/tablet-card-1@1x.webp 1x, img/jpeg/card/card1/tablet-card-1@2x.webp 2x" width="648" height="400">
+                    <source type="image/webp"  srcset="img/jpeg/card/card1/mobile-card-1@1x.webp 1x, img/jpeg/card/card1/mobile-card-1@2x.webp 2x" width="280" height="280">
+
                     <source srcset="img/jpeg/card/card1/desktop-card-1@1x.jpg 1x, img/jpeg/card/card1/desktop-card-1@2x.jpg 2x" width="1200" height="400"  type="image/jpeg" media="(min-width:1200px)">
                     <source srcset="img/jpeg/card/card1/tablet-card-1@1x.jpg 1x, img/jpeg/card/card1/tablet-card-1@2x.jpg 2x" width="648" height="400" type="image/jpeg" media="(min-width:768px)">
                     <img class="card__img" src="img/jpeg/card/card1/mobile-card-1@1x.jpg" width="280" height="280"
@@ -109,7 +112,7 @@
                 <div class="card__like like">
                   <button class="like__button">
                     <span class="visually-hidden">нравится.</span>
-                    <svg width="23" height="21">
+                    <svg class="like__img" width="23" height="21">
                       <use xlink:href="img/sprite.svg#icon__like"></use>
                     </svg>
                   </button>
@@ -126,6 +129,10 @@
                   <span class="visually-hidden">открыть оригинал фото</span>
                   <div class="card__picture">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1200px)"  srcset="img/jpeg/card/card2/desktop-card-2@1x.webp 1x, img/jpeg/card/card2/desktop-card-2@2x.webp 2x" width="400" height="267">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/jpeg/card/card2/tablet-card-2@1x.webp 1x, img/jpeg/card/card2/tablet-card-2@2x.webp 2x" width="324" height="267">
+                    <source type="image/webp"  srcset="img/jpeg/card/card2/mobile-card-2@1x.webp 1x, img/jpeg/card/card2/mobile-card-2@2x.webp 2x" width="280" height="280">
+
                     <source srcset="img/jpeg/card/card2/desktop-card-2@1x.jpg 1x, img/jpeg/card/card2/desktop-card-2@2x.jpg 2x" width="400" height="267"  type="image/jpeg" media="(min-width:1200px)">
                     <source srcset="img/jpeg/card/card2/tablet-card-2@1x.jpg 1x, img/jpeg/card/card2/tablet-card-2@2x.jpg 2x" width="324" height="267" type="image/jpeg" media="(min-width:768px)">
                     <img class="card__img" src="img/jpeg/card/card2/mobile-card-2@1x.jpg" width="280" height="280"
@@ -146,7 +153,7 @@
                 <div class="card__like like">
                   <button class="like__button">
                     <span class="visually-hidden">нравится.</span>
-                    <svg width="23" height="21">
+                    <svg class="like__img" width="23" height="21">
                       <use xlink:href="img/sprite.svg#icon__like"></use>
                     </svg>
                   </button>
@@ -162,6 +169,10 @@
                   <a class="card__link" href="img/jpeg/card/card3/desktop-card-3@2x.jpg" target="_blank">
                   <div class="card__picture">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1200px)"  srcset="img/jpeg/card/card3/desktop-card-3@1x.webp 1x, img/jpeg/card/card3/desktop-card-3@2x.webp 2x" width="400" height="267">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/jpeg/card/card3/tablet-card-3@1x.webp 1x, img/jpeg/card/card3/tablet-card-3@2x.webp 2x" width="324" height="267">
+                    <source type="image/webp"  srcset="img/jpeg/card/card3/mobile-card-3@1x.webp 1x, img/jpeg/card/card3/mobile-card-3@2x.webp 2x" width="280" height="280">
+
                     <source srcset="img/jpeg/card/card3/desktop-card-3@1x.jpg 1x, img/jpeg/card/card3/desktop-card-3@2x.jpg 2x" width="400" height="267"  type="image/jpeg" media="(min-width:1200px)">
                     <source srcset="img/jpeg/card/card3/tablet-card-3@1x.jpg 1x, img/jpeg/card/card3/tablet-card-3@2x.jpg 2x" width="324" height="267" type="image/jpeg" media="(min-width:768px)">
                     <img class="card__img" src="img/jpeg/card/card3/mobile-card-3@1x.jpg" width="280" height="280"
@@ -182,7 +193,7 @@
                 <div class="card__like like">
                   <button class="like__button">
                     <span class="visually-hidden">нравится.</span>
-                    <svg width="23" height="21">
+                    <svg class="like__img" width="23" height="21">
                       <use xlink:href="img/sprite.svg#icon__like"></use>
                     </svg>
                   </button>
@@ -199,7 +210,11 @@
                   <div class="card__picture">
 
                   <picture class="card__picture">
-                  <source srcset="img/jpeg/card/card4/desktop-card-4@1x.jpg 1x, img/jpeg/card/card4/desktop-card-4@2x.jpg 2x" width="400" height="267"  type="image/jpeg" media="(min-width:1200px)">
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/jpeg/card/card4/desktop-card-4@1x.webp 1x, img/jpeg/card/card4/desktop-card-4@2x.webp 2x" width="400" height="267">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/jpeg/card/card4/tablet-card-4@1x.webp 1x, img/jpeg/card/card4/tablet-card-4@2x.webp 2x" width="324" height="267">
+                    <source type="image/webp"  srcset="img/jpeg/card/card4/mobile-card-4@1x.webp 1x, img/jpeg/card/card4/mobile-card-4@2x.webp 2x" width="280" height="280">
+
+                    <source srcset="img/jpeg/card/card4/desktop-card-4@1x.jpg 1x, img/jpeg/card/card4/desktop-card-4@2x.jpg 2x" width="400" height="267"  type="image/jpeg" media="(min-width:1200px)">
                     <source srcset="img/jpeg/card/card4/tablet-card-4@1x.jpg 1x, img/jpeg/card/card4/tablet-card-4@2x.jpg 2x" width="324" height="267" type="image/jpeg" media="(min-width:768px)">
                     <img class="card__img" src="img/jpeg/card/card4/mobile-card-4@1x.jpg" width="280" height="280"
                     srcset="img/jpeg/card/card4/mobile-card-4@1x.jpg 1x, img/jpeg/card/card4/mobile-card-4@2x.jpg 2x"  alt="мост камень.">
@@ -219,7 +234,7 @@
                 <div class="card__like like">
                   <button class="like__button">
                     <span class="visually-hidden">нравится.</span>
-                    <svg width="23" height="21">
+                    <svg class="like__img" width="23" height="21">
                       <use xlink:href="img/sprite.svg#icon__like"></use>
                     </svg>
                   </button>
@@ -265,7 +280,7 @@
           <li class="social__item">
             <a href="https://vk.com/htmlacademy" class="social__link social__link--vkontakte">
               <span class="visually-hidden">мы вконтакте.</span>
-              <svg width="24" height="24">
+              <svg class="social__img" width="24" height="24">
                 <use xlink:href="img/sprite.svg#social__vk"></use>
               </svg>
             </a>
@@ -273,7 +288,7 @@
           <li class="social__item">
             <a href="https://t.me/htmlacademy" class="social__link social__link--telegram">
               <span class="visually-hidden">мы в телеграм.</span>
-              <svg width="24" height="24">
+              <svg class="social__img" width="24" height="24">
                 <use xlink:href="img/sprite.svg#social__telegram"></use>
               </svg>
             </a>
@@ -281,7 +296,7 @@
           <li class="social__item">
             <a href="https://www.youtube.com/user/htmlacademyru" class="social__link social__link--youtube">
               <span class="visually-hidden">мы в youtube.</span>
-              <svg width="24" height="24">
+              <svg class="social__img" width="24" height="24">
                 <use xlink:href="img/sprite.svg#social__youtube"></use>
               </svg>
             </a>
@@ -291,7 +306,7 @@
       <div class="main-footer__copyright copyright">
         <a href="https://htmlacademy.ru" class="copyright__link">
           <span class="copyright__text">разработано</span>
-          <svg width="27" height="35">
+          <svg class="copyright__img" width="27" height="35">
             <use xlink:href="img/sprite.svg#logo__htmlacademy"></use>
           </svg>
         </a>

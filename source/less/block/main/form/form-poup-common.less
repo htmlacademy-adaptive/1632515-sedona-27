@@ -28,6 +28,15 @@
 
 .popup__button {
   font-size: 18px;
+
+  &:hover {
+    background-color: @blue-hover;
+  }
+
+  &:active {
+    background-color: @blue-active;
+    color: fadeout(@white, 70%);
+  }
 }
 
 .popup__disabled {

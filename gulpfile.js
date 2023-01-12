@@ -71,12 +71,12 @@ const createWebp = () => {
 // SVG
 
 const svg = () =>
-  gulp.src('source/img/svg/**/*.svg')
+  gulp.src(['source/img/svg/**/*.svg', '!source/img/icon/*.svg'])
     .pipe(svgo())
     .pipe(gulp.dest('build/img/svg'));
 
 const sprite = () => {
-  return gulp.src('source/img/svg/**/*.svg')
+  return gulp.src('source/img/svg/icon/*.svg')
     .pipe(svgo())
     .pipe(svgstore({
       inlineSvg: true
@@ -91,6 +91,7 @@ const copy = (done) => {
   gulp.src([
     'source/fonts/*.{woff2,woff}',
     'source/*.ico',
+    'source/*.webmanifest',
   ], {
     base: 'source'
   })
@@ -146,6 +147,10 @@ export const build = gulp.series(
     svg,
     sprite,
     createWebp
+  ),
+  gulp.series(
+    server,
+    watcher
   ),
 );
 

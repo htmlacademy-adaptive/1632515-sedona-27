@@ -4,7 +4,7 @@
   .hero-catalog {
     width: 100%;
     background:
-      url("../img/svg/decoration/triangle-first.svg") no-repeat,
+      url("../img/svg/triangle-first.svg") no-repeat,
       url("../img/jpeg/background/desktop/back-desktop@1x.jpg") no-repeat;
     background-color: @background-safe;
     background-position: 50% 100%, 50% 95%;
@@ -14,7 +14,7 @@
   @media (min-resolution: 2dppx) {
     .hero-catalog {
       background:
-        url("../img/svg/decoration/triangle-first.svg") no-repeat,
+        url("../img/svg/triangle-first.svg") no-repeat,
         url("../img/jpeg/background/desktop/back-desktop@1x.jpg") no-repeat;
       background-color: @background-safe;
       background-position: 50% 100%, 50% 95%;
@@ -84,7 +84,7 @@
     }
   }
 
-  .card__link:hover + .card__autour-container {
+  .card__link:hover+.card__autour-container {
     background-color: darken(@background-gray-first, 10%);
   }
 
@@ -179,6 +179,10 @@
     padding: 0;
   }
 
+  .like__img use {
+    fill: currentColor;
+  }
+
   .card__autour-container {
     position: absolute;
     bottom: 0;
@@ -191,7 +195,7 @@
     }
   }
 
-  .card__link:hover + .card__autour-container {
+  .card__link:hover+.card__autour-container {
     background-color: fadeout(@black, 30%);
   }
 

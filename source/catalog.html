@@ -8,6 +8,10 @@
   <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon/180.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/ptsans.woff" type="font/woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff" type="font/woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff2" type="font/woff" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
   <title>Галерея</title>
 </head>
@@ -74,7 +78,7 @@
               фото и видео
             </h2>
             <p class="intro-catalog__description">
-              Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
+              Не можете решиться на путешествие из-за курса? <br class="catalog__br--first"> Фотографии помогут вам забыть о политике и экономике.
             </p>
           </div>
         </div>
@@ -99,8 +103,8 @@
                   </picture>
                   </div>
                 </a>
-                  <div class="card__autour-container">
-                  <h3 class="card__title">
+                  <div class="card__autour-container card__autour-container--preview">
+                  <h3 class="card__title card__title--preview">
                     неродные просторы
                   </h3>
                   <p class="card__autour autour">
@@ -269,7 +273,7 @@
   </main>
 
   <footer class="main-footer">
-    <div class="main-footer__wrapper">
+    <div class="main-footer__wrapper main-footer__wrapper--catalog">
       <div class="main-footer__tag tag">
         <span class="tag__title">
           #visitSEDONA

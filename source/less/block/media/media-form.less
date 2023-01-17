@@ -17,7 +17,7 @@
 
   .intro-form {
     border-bottom: none;
-    margin-bottom: 102px;
+    margin-bottom: 79px;
   }
 
   .intro-form__wrapper {
@@ -26,6 +26,7 @@
 
   .intro-form__title {
     font-size: 30px;
+    padding-bottom: 20px;
   }
 
   .intro-form__description {
@@ -40,7 +41,7 @@
   .full-name {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-bottom: 48px;
+    margin-bottom: 2px;
     position: relative;
   }
 
@@ -61,7 +62,11 @@
 
   .full-name__contact-details {
     min-width: 85%;
-    justify-self: self-end;
+  }
+
+  .contact-details__input-wrapper {
+    max-width: 280px;
+    margin-left: auto;
   }
 
   .general-feeling__input-radio-wrapper {
@@ -69,20 +74,44 @@
     max-width: 576px;
   }
 
+  .visited-places__wrapper {
+    margin-bottom: 30px;
+  }
+
   .visited-places__input-checkbox-wrapper {
     grid-template-columns: repeat(2, 1fr);
     max-width: 480px;
+    column-gap: 32px;
   }
 
   .form__button-wrapper {
     flex-direction: row;
     justify-content: space-between;
     max-width: 648px;
+    padding: 0;
   }
 
   .form__title {
     margin: 0 auto 28px;
     font-size: 21px;
+
+    &--first {
+      padding-left: 50px;
+    }
+  }
+
+  .field__title {
+    max-width: 190px;
+  }
+
+  .form__input {
+    &--phone {
+      padding: 16px 60px 16px 16px;
+    }
+
+    &--mail {
+      padding: 16px 60px 16px 16px;
+    }
   }
 
   .form__strips {
@@ -111,11 +140,12 @@
   }
 
   .form__button {
-    max-width: 354px;
+    max-width: 324px;
   }
 
   .form__required-title {
     font-size: 14px;
+    align-self: center;
   }
 
   .field__part {
@@ -130,15 +160,44 @@
     padding: 0 60px 48px;
   }
 
+  .input-check__item {
+    margin-bottom: 36px;
+  }
+
+  .input-check__item--check {
+    margin: 0;
+  }
+
+  .input-check__item--check:not(:nth-last-child(-n+2)) {
+    margin-bottom: 36px;
+  }
+
+  .input-check {
+    margin-bottom: 0;
+  }
+
+  .review-field {
+    min-height: 160px;
+  }
+
   //POP UP
   .popup__wrapper {
     &--positive {
       min-width: 640px;
+      min-height: 347px;
+      padding-top: 50px;
     }
 
     &--negative {
       min-width: 400px;
+      min-height: 347px;
+      padding: 50px;
     }
+  }
+
+  .popup__title {
+    font-size: 30px;
+    line-height: 36px;
   }
 
   .popup__content--positive {
@@ -147,15 +206,25 @@
 
   .popup__content--negative {
     max-width: 307px;
+    margin-bottom: 50px;
+  }
+
+  .popup__content--negative .popup__title {
+    max-width: 250px;
   }
 
   .popup__button-wrapper--positive button {
     max-width: 458px;
   }
 
+  .popup__button {
+    font-size: 21px;
+  }
+
   .popup__button-wrapper {
     &--positive {
       width: 640px;
+      padding: 44px;
     }
 
     &--negative {
@@ -182,31 +251,66 @@
   }
 
   .intro-form {
-    margin-bottom: 67px;
+    margin-bottom: 40px;
+  }
+
+  .intro-form__title {
+    padding-bottom: 30px;
   }
 
   .intro-form__wrapper {
-    max-width: 434px;
+    max-width: 435px;
   }
 
   //FEEDBACK FIELD
 
-  .full-name__wrapper {
-    max-width: 430px;
+  .full-name {
+    margin-bottom: 11px;
   }
 
-  .full-name__contact-details {
-    max-width: 402px;
+  .full-name__wrapper {
+    min-width: 90%;
   }
 
   .general-feeling__input-radio-wrapper {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 280px 280px 240px;
+    justify-content: center;
+    column-gap: 28px;
     max-width: 960px;
+    padding-top: 26px;
   }
 
   .visited-places__input-checkbox-wrapper {
-    grid-template-columns: repeat(4, 1fr);
-    max-width: 960px;
+    grid-template-columns: 172px 170px 153px 184px;
+    column-gap: 64px;
+    max-width: 870px;
+    padding-top: 40px;
+  }
+
+  .general-feeling__wrapper {
+    margin-bottom: 24px;
+  }
+
+  .input-check__item--check:not(:nth-last-child(-n+2)) {
+    margin-bottom: 0;
+  }
+
+  .visited-places__wrapper {
+    margin-bottom: 75px;
+  }
+
+  .form__title {
+    &--first {
+      padding-left: 60px;
+    }
+
+    &--second {
+      padding-left: 14px;
+    }
+  }
+
+  .contact-details__input-wrapper {
+    max-width: 400px;
   }
 
   .form__field-wrapper {

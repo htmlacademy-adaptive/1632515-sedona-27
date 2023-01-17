@@ -89,6 +89,7 @@
 
   .intro__title {
     font-size: 21px;
+    margin: 0 0 30px;
   }
 
   //MAIN
@@ -114,9 +115,26 @@
     max-width: 150px;
   }
 
+  .advantages__title--features {
+    padding: 0;
+    margin: 0 0 26px 0;
+  }
+
+  .advantages__description--features {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
   .advantages__item-wrapper {
     .flex-center();
     flex-direction: column;
+    padding: 52px 33px 31px;
+  }
+
+  .advantages__item-wrapper--second {
+    padding: 45px 33px;
+    justify-content: flex-start;
   }
 
   .advantages__item {
@@ -146,29 +164,26 @@
     min-height: 331px;
   }
 
+  .advantages__item--features:nth-child(4) {
+    padding: 0;
+  }
+
   .features__img {
-    margin: 0;
-    margin-bottom: 26px;
-
-    &--home {
-      width: 77px;
-      height: 72px;
-    }
-
-    &--food {
-      width: 80px;
-      height: 68px;
-    }
-
-    &--gift {
-      width: 66px;
-      height: 75px;
-    }
+    margin: 0 0 14px 0;
+    width: 85px;
+    height: 80px;
   }
 
   .features__wrapper {
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
+    min-height: 210px;
+    padding: 0 33px;
+  }
+
+  .features__br {
+    display: inline-block;
   }
 
   .advantages__item-wrapper--rotate {
@@ -179,10 +194,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    & p {
-      text-align: center;
-    }
+    margin-left: 0;
   }
 
   //SEARCH
@@ -197,6 +209,11 @@
 
   .search__title {
     font-size: 30px;
+    padding: 0 0 32px;
+  }
+
+  .search__description {
+    padding: 0 0 40px;
   }
 
   .search__br {
@@ -210,9 +227,10 @@
   //FOOTER
   .main-footer__wrapper {
     flex-direction: row;
+    justify-content: space-around;
     width: 100%;
     min-height: 120px;
-    padding: 36px 45px;
+    padding: 35px 22px 35px 10px;
   }
 
   .social__list {
@@ -233,7 +251,7 @@
   }
 
   .intro__wrapper {
-    max-width: 484px;
+    max-width: 485px;
   }
 
   //ADVANTAGES
@@ -245,27 +263,34 @@
     }
   }
 
+  .advantages__description {
+    max-width: 285px;
+  }
+
+  .advantages__number {
+    padding: 0 0 22px;
+  }
+
   .advantages__item-wrapper {
     max-width: 300px;
     padding: 0;
   }
 
-  .features__img {
-    margin-bottom: 27px;
+  .advantages__item-wrapper--second {
+    padding: 20px 0 0;
+  }
 
-    &--home {
-      width: 79px;
-      height: 72px;
-    }
+  .advantages__item-wrapper--square {
+    padding: 0;
+  }
+
+  .features__img {
+    width: 80px;
+    height: 85px;
+    margin-bottom: 23px;
 
     &--food {
-      width: 73px;
-      height: 68px;
-    }
-
-    &--gift {
-      width: 77px;
-      height: 75px;
+      margin-bottom: 20px;
     }
   }
 
@@ -274,10 +299,16 @@
     margin-bottom: 66px;
   }
 
+  .search__description {
+    padding: 0 0 45px;
+  }
+
   //FOOTER
   .main-footer__wrapper {
     flex-direction: row;
-    width: 100%;
+    max-width: 975px;
+    justify-content: space-between;
+    margin: 0 auto;
   }
 
   .social__list {

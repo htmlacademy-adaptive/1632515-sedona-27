@@ -10,16 +10,18 @@
 
 .popup__wrapper {
   .flex-center();
+  justify-content: flex-start;
   flex-direction: column;
   position: relative;
   min-width: 320px;
+  max-height: 90vh;
   margin: auto;
   background-color: @white;
 }
 
 .popup__title {
   .title-bold();
-  margin-bottom: 37px;
+  margin-bottom: 26px;
 }
 
 .popup__text {
@@ -28,6 +30,8 @@
 
 .popup__button {
   font-size: 18px;
+  padding: 10px;
+  font-family: inherit;
 
   &:hover {
     background-color: @blue-hover;

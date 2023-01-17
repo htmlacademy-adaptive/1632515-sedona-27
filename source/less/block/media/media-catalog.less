@@ -32,16 +32,21 @@
   }
 
   .intro-catalog {
-    margin-bottom: 67px;
+    margin-bottom: 80px;
   }
 
   .intro-catalog__title {
     font-size: 30px;
+    margin-bottom: 33px;
+  }
+
+  .catalog__br--first {
+    display: inline-block;
   }
 
   //CARD
   .card {
-    margin-bottom: 58px;
+    margin-bottom: 54px;
   }
 
   .card__wrapper {
@@ -84,16 +89,17 @@
     }
   }
 
-  .card__link:hover+.card__autour-container {
+  .card__link:hover + .card__autour-container {
     background-color: darken(@background-gray-first, 10%);
   }
 
   .card__title {
-    padding-top: 15px;
+    padding-top: 22px;
   }
 
   .card__autour {
     grid-column: 1/2;
+    padding-bottom: 17px;
   }
 
   .card__like {
@@ -114,11 +120,12 @@
 
   .video-catalog__title {
     font-size: 30px;
+    padding: 0 0 31px;
   }
 
   .video-catalog__wrapper-text {
     padding: 0;
-    margin-bottom: 66px;
+    margin-bottom: 90px;
   }
 
   .video-catalog__player {
@@ -136,6 +143,14 @@
       background: url("../img/jpeg/poster/holder-tablet@2x.jpg") no-repeat;
       background-size: 648px 500px;
     }
+  }
+
+  //FOOTER
+  .main-footer__wrapper {
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 35px 0;
+    max-width: 647px;
   }
 }
 
@@ -157,7 +172,7 @@
   }
 
   .intro-catalog {
-    margin-bottom: 65px;
+    margin-bottom: 88px;
   }
 
   //CARD
@@ -172,6 +187,10 @@
   .card__list {
     grid-template-columns: repeat(3, 1fr);
     max-width: 100%;
+  }
+
+  .card__title {
+    padding: 20px 0 2px 0;
   }
 
   .card__item {
@@ -189,13 +208,14 @@
     width: 100%;
     background-color: fadeout(@black, 70%);
     color: @white;
+    padding: 0 20px 0 27px;
 
     &:hover {
       background-color: fadeout(@black, 30%);
     }
   }
 
-  .card__link:hover+.card__autour-container {
+  .card__link:hover + .card__autour-container {
     background-color: fadeout(@black, 30%);
   }
 
@@ -227,5 +247,10 @@
       background: url("../img/jpeg/poster/holder-desktop@2x.jpg") no-repeat;
       background-size: 800px 500px;
     }
+  }
+
+  //FOOTER
+  .main-footer__wrapper {
+    max-width: 962px;
   }
 }

@@ -8,6 +8,10 @@
   <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon/180.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/ptsans.woff" type="font/woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff" type="font/woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff2" type="font/woff" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
   <title>Форма отзыва</title>
 </head>
@@ -81,7 +85,7 @@
               <div class="form__full-name full-name">
                 <div class="full-name__wrapper field__part">
                   <div class="content-form">
-                    <h2 class="form__title">
+                    <h2 class="form__title form__title--first">
                     Представьтесь:
                     </h2>
                     <div class="full-name__input-wrapper">
@@ -120,7 +124,7 @@
 
                 <div class="full-name__contact-details contact-details field__part">
                   <div class="content-form">
-                    <h2 class="form__title">
+                    <h2 class="form__title form__title--second">
                       Контактная информация:
                     </h2>
                     <div class="contact-details__input-wrapper">

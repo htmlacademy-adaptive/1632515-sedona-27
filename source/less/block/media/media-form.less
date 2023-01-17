@@ -62,7 +62,11 @@
 
   .full-name__contact-details {
     min-width: 85%;
-    justify-self: self-end;
+  }
+
+  .contact-details__input-wrapper {
+    max-width: 280px;
+    margin-left: auto;
   }
 
   .general-feeling__input-radio-wrapper {
@@ -90,6 +94,24 @@
   .form__title {
     margin: 0 auto 28px;
     font-size: 21px;
+
+    &--first {
+      padding-left: 50px;
+    }
+  }
+
+  .field__title {
+    max-width: 190px;
+  }
+
+  .form__input {
+    &--phone {
+      padding: 16px 60px 16px 16px;
+    }
+
+    &--mail {
+      padding: 16px 60px 16px 16px;
+    }
   }
 
   .form__strips {
@@ -162,11 +184,20 @@
   .popup__wrapper {
     &--positive {
       min-width: 640px;
+      min-height: 347px;
+      padding-top: 50px;
     }
 
     &--negative {
       min-width: 400px;
+      min-height: 347px;
+      padding: 50px;
     }
+  }
+
+  .popup__title {
+    font-size: 30px;
+    line-height: 36px;
   }
 
   .popup__content--positive {
@@ -175,15 +206,25 @@
 
   .popup__content--negative {
     max-width: 307px;
+    margin-bottom: 50px;
+  }
+
+  .popup__content--negative .popup__title {
+    max-width: 250px;
   }
 
   .popup__button-wrapper--positive button {
     max-width: 458px;
   }
 
+  .popup__button {
+    font-size: 21px;
+  }
+
   .popup__button-wrapper {
     &--positive {
       width: 640px;
+      padding: 44px;
     }
 
     &--negative {
@@ -228,22 +269,23 @@
   }
 
   .full-name__wrapper {
-    max-width: 430px;
+    min-width: 90%;
   }
 
-  .full-name__contact-details {
-    max-width: 402px;
-  }
+
 
   .general-feeling__input-radio-wrapper {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 280px 280px 240px;
+    justify-content: center;
+    column-gap: 28px;
     max-width: 960px;
     padding-top: 26px;
   }
 
   .visited-places__input-checkbox-wrapper {
-    grid-template-columns: repeat(4, 1fr);
-    max-width: 960px;
+    grid-template-columns: 172px 170px 153px 184px;
+    column-gap: 64px;
+    max-width: 870px;
     padding-top: 40px;
   }
 
@@ -257,6 +299,20 @@
 
   .visited-places__wrapper {
     margin-bottom: 75px;
+  }
+
+  .form__title {
+    &--first {
+      padding-left: 60px;
+    }
+
+    &--second {
+      padding-left: 14px;
+    }
+  }
+
+  .contact-details__input-wrapper {
+    max-width: 400px;
   }
 
   .form__field-wrapper {

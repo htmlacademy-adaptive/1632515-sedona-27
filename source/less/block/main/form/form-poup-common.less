@@ -1,4 +1,4 @@
-.form__popup {
+.popup {
   position: fixed;
   top: 0;
   left: 0;
@@ -6,6 +6,14 @@
   width: 100%;
   height: 100%;
   background-color: @black-light;
+
+  &--positive-disabled {
+    display: none;
+  }
+
+  &--negative-disabled {
+    display: none;
+  }
 }
 
 .popup__wrapper {
@@ -41,8 +49,4 @@
     background-color: @blue-active;
     color: fadeout(@white, 70%);
   }
-}
-
-.popup__disabled {
-  display: none;
 }
